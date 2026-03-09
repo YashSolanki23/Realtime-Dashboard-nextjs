@@ -27,7 +27,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header style={{padding:20 ,textAlign:"center",backgroundColor:" #111827" ,fontSize:"30px"}}>
+          Realtime Dashboard
+        </header>
+       <main>
+         {children}
+       </main>
       </body>
     </html>
   );
